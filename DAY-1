@@ -1,0 +1,52 @@
+PORTFOLIO..............
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section,h1{
+                color: blue;
+                text-align: center;
+            }
+            h3,h2,th,td{
+                text-align: center;
+            }
+            table tr th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>  
+        <section>
+            <img src="./avathar.jpg" alt="avatar" width="200" height="200">
+            <h1>Midde Ramya</h1>
+        </section>
+            <h3>web devceloper</h3>
+            <h2>mobile no:24325</h2>
+    <hr>
+    <h1>Education</h1>
+        <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Year </th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>2026</td>
+                    <td>84%</td>
+                </tr>
+                <tr>
+                    <td>diploma</td>
+                    <td>2024</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>2021</td>
+                    <td>82%</td>
+                </tr>
+                </table>
+    </body>
+</html>
