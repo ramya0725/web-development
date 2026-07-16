@@ -1,0 +1,118 @@
+.............REGISRTATION FORM....................
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Form</title>
+        <style>
+            div{
+                margin: auto;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Job Application form</h1>
+            <hr>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" name="email"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" name="age"><br><br>
+            <hr>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br><hr>
+            <label for="hobbies">Hobbies:</label><br>
+                <input type="checkbox" id="vollyboll" name="sports" value="yes">
+                <label for="vollyboll">Volleyball</label><br>
+                <input type="checkbox" id="reading books" name="reading books" value="yes">
+                <label for="reading books">Reading Books</label><br>
+                <input type="checkbox" id="coding" name="coding" value="yes">
+                <label for="coding">Coding</label><br><br><hr>
+                <label for="message">Message:</label><br>
+            <textarea id="message" placeholder="Enter your message" name="message" rows="5" cols="40"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <button type="button" onclick="alert('Hello!')">Click Me</button>
+            </div>
+        </form>
+    </body>
+</html>
+          ..............LOGIN FORM.................
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        form{
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+        }
+        h2{
+            text-align:center;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" ><br><br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+</html>
+          ...............FEEDBACK FORM................
+  <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <style>
+            form,h1{
+                width: 300px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> hospitalFeedback Form</h1>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="category">Category:</label><br>
+            <input type="text" id="category" name="category" required><br><br>
+            <label for="mobile no">Mobile Number:</label><br>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="department">Department:</label><br>
+            <input type="text" id="department" name="department" required><br><
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+</html>
