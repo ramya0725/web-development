@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Cards</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:30px;
+}
+
+/* Flex Container */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+/* Product Card */
+.card{
+    width:250px;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.card h2{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#4CAF50;
+    font-size:20px;
+    font-weight:bold;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2e7d32;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .card{
+        width:45%;
+    }
+}
+
+@media(max-width:480px){
+    .card{
+        width:100%;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180" alt="Product">
+        <div class="card-content">
+            <h2>Headphones</h2>
+            <p>Wireless Bluetooth Headphones</p>
+            <div class="price">₹2,999</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180" alt="Product">
+        <div class="card-content">
+            <h2>Smart Watch</h2>
+            <p>Fitness Tracking Smart Watch</p>
+            <div class="price">₹4,999</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180" alt="Product">
+        <div class="card-content">
+            <h2>Mobile Phone</h2>
+            <p>Latest Android Smartphone</p>
+            <div class="price">₹19,999</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
