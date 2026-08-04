@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Card</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f4f4f4;
+}
+
+/* Pricing Card */
+.card{
+    width:300px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    text-align:center;
+    padding:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.3);
+}
+
+.card h2{
+    color:#333;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:36px;
+    color:#4CAF50;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.card ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.card ul li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.card button{
+    width:100%;
+    padding:12px;
+    background:#4CAF50;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#2e7d32;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Basic Plan</h2>
+
+    <div class="price">₹499/month</div>
+
+    <ul>
+        <li>✔ 10 GB Storage</li>
+        <li>✔ 100 GB Bandwidth</li>
+        <li>✔ Email Support</li>
+        <li>✔ 24/7 Access</li>
+    </ul>
+
+    <button>Choose Plan</button>
+</div>
+
+</body>
+</html>
